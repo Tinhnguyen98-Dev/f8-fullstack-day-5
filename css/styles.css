@@ -98,3 +98,69 @@ body {
 .content-para span {
     font-weight: bold;
 }
+
+/* MENU */
+.nav {
+    background-color: rgb(62 92 202);
+}
+
+.active {
+    background-color: #fff;
+    color: #000;
+}
+
+.menu {
+    position: relative;
+    font-size: 0;
+    text-align: justify;
+}
+
+.menu > li:not(:last-child) {
+    display: inline-block;
+    line-height: 44px;
+    padding: 6px 12px;
+}
+
+.menu li:hover,
+.menu > li:hover > a {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+.nav-child {
+    display: none;
+}
+
+.menu li:hover .nav-child {
+    display: block;
+    position: absolute;
+    top: 62.5px;
+    margin-left: -12px;
+    min-width: 240px;
+    box-shadow: inset;
+}
+
+.nav-child li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    list-style-type: none;
+}
+
+.nav-child li a {
+    padding-left: 12px;
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav-child li:hover {
+    color: #fff;
+    background-color: #ccc;
+}
